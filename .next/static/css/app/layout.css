@@ -521,6 +521,18 @@ video {
 [hidden]:where(:not([hidden="until-found"])) {
   display: none;
 }
+.mt-10 {
+  margin-top: 2.5rem;
+}
+.mt-52 {
+  margin-top: 13rem;
+}
+.mt-72 {
+  margin-top: 18rem;
+}
+.mt-44 {
+  margin-top: 11rem;
+}
 .flex {
   display: flex;
 }
