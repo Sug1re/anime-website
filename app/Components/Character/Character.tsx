@@ -9,9 +9,9 @@ const Character = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 3.5, delay: 0.5 }}
-      className=" w-screen"
+      className=" w-screen flex flex-col items-center justify-center"
     >
-      <h4>キャラクター紹介</h4>
+      <h6>キャラクター紹介</h6>
       <p>キャラクターの詳細情報を記載</p>
     </motion.section>
   );

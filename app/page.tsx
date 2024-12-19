@@ -7,8 +7,9 @@ export default function Home() {
       <Section.Title />
       <Section.Introduction />
       <Section.Information />
-      <Section.Character />
       <Section.Staff />
+      <Section.Cast />
+      <Section.Character />
       <Section.Footer />
     </main>
   );

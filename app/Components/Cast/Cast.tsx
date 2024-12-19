@@ -3,27 +3,27 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const Staff = () => {
+const Cast = () => {
   return (
     <motion.section
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 3.5, delay: 0.5 }}
-      className="w-screen flex flex-col items-center justify-center"
+      className="flex flex-col items-center justify-center px-36 md:px-0 pt-32"
     >
-      <div className=" grid grid-cols-2 gap-x-28 gap-y-8 px-12">
+      {/*　フォントを変更する */}
+      <h5 className=" text-3xl md:text-4xl pb-5">CAST</h5>
+      <div className=" grid grid-cols-4 gap-28 px-12">
         <div className=" flex flex-col">
-          <p className=" md:text-1xl font-semibold text-red-600">監督</p>
+          <p className=" md:text-1xl font-semibold text-red-600">堀 京子</p>
           <p className=" text-lg md:text-2xl font-bold">戸松 遥</p>
         </div>
         <div className=" flex flex-col">
-          <p className=" md:text-1xl font-semibold text-red-600">
-            シリーズ構成・脚本
-          </p>
+          <p className=" md:text-1xl font-semibold text-red-600">宮村 伊澄</p>
           <p className=" text-lg md:text-2xl font-bold">内山 昂輝</p>
         </div>
         <div className=" flex flex-col">
-          <p className=" md:text-1xl font-semibold text-red-600">総作画監督</p>
+          <p className=" md:text-1xl font-semibold text-red-600">石川 透</p>
           <p className=" text-lg md:text-2xl font-bold">山下 誠一郎</p>
         </div>
         <div className=" flex flex-col">
@@ -47,16 +47,24 @@ const Staff = () => {
           <p className=" text-lg md:text-2xl font-bold">山下 大輝</p>
         </div>
         <div className=" flex flex-col">
-          <p className=" md:text-1xl font-semibold text-red-600">河野 桜</p>
-          <p className=" text-lg md:text-2xl font-bold">近藤 玲奈</p>
+          <p className=" md:text-1xl font-semibold text-red-600">柳 明音</p>
+          <p className=" text-lg md:text-2xl font-bold">福山 潤</p>
         </div>
         <div className=" flex flex-col">
-          <p className=" md:text-1xl font-semibold text-red-600">井浦 秀</p>
-          <p className=" text-lg md:text-2xl font-bold">山下 大輝</p>
+          <p className=" md:text-1xl font-semibold text-red-600">進藤 晃一</p>
+          <p className=" text-lg md:text-2xl font-bold">八代 拓</p>
+        </div>
+        <div className=" flex flex-col">
+          <p className=" md:text-1xl font-semibold text-red-600">沢田 ほのか</p>
+          <p className=" text-lg md:text-2xl font-bold">麻倉 もも</p>
+        </div>
+        <div className=" flex flex-col">
+          <p className=" md:text-1xl font-semibold text-red-600">堀 京介</p>
+          <p className=" text-lg md:text-2xl font-bold">小野 大輔</p>
         </div>
       </div>
     </motion.section>
   );
 };
 
-export default Staff;
+export default Cast;
