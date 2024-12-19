@@ -16,7 +16,7 @@ const Title = () => {
       id="title"
       className="w-screen"
     >
-      <h1>任意のアニメタイトル</h1>
+      <h1>名探偵コナン</h1>
     </motion.section>
   );
 };
