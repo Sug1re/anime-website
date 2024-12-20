@@ -14,7 +14,7 @@ const Title = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 3.5, delay: 0.5 }}
       id="title"
-      className="w-screen flex flex-col items-center justify-center"
+      className="h-screen w-screen flex flex-col items-center justify-center "
     >
       <h1>名探偵コナン</h1>
     </motion.section>
