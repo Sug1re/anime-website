@@ -3,7 +3,7 @@ import * as Section from "./Components/Index";
 
 export default function Home() {
   return (
-    <main className=" flex whitespace-nowrap motion">
+    <main className=" flex">
       <Section.Title />
       <Section.Introduction />
       <Section.Information />

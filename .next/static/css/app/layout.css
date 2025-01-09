@@ -542,8 +542,23 @@ video {
 .flex {
   display: flex;
 }
+.grid {
+  display: grid;
+}
+.h-screen {
+  height: 100vh;
+}
+.w-auto {
+  width: auto;
+}
 .w-screen {
   width: 100vw;
+}
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
@@ -554,15 +569,27 @@ video {
 .justify-center {
   justify-content: center;
 }
+.gap-x-24 {
+  column-gap: 6rem;
+}
+.gap-x-28 {
+  column-gap: 7rem;
+}
+.gap-y-6 {
+  row-gap: 1.5rem;
+}
+.gap-y-8 {
+  row-gap: 2rem;
+}
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
-.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+.space-y-8 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
-  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 .whitespace-nowrap {
   white-space: nowrap;
@@ -582,36 +609,57 @@ video {
   padding-left: 1rem;
   padding-right: 1rem;
 }
-.px-40 {
-  padding-left: 10rem;
-  padding-right: 10rem;
+.px-44 {
+  padding-left: 11rem;
+  padding-right: 11rem;
 }
-.pb-7 {
-  padding-bottom: 1.75rem;
+.pb-12 {
+  padding-bottom: 3rem;
+}
+.pb-4 {
+  padding-bottom: 1rem;
+}
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+.pb-8 {
+  padding-bottom: 2rem;
 }
 .pl-7 {
   padding-left: 1.75rem;
 }
-.pt-24 {
-  padding-top: 6rem;
-}
-.pt-28 {
-  padding-top: 7rem;
+.text-end {
+  text-align: end;
 }
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
 }
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
 .font-black {
   font-weight: 900;
+}
+.font-bold {
+  font-weight: 700;
 }
 .font-semibold {
   font-weight: 600;
@@ -638,17 +686,23 @@ body {
   height: 100vh;
   overflow-x: auto; /* 横スクロールを有効*/
   overflow-y: hidden; /* 縦スクロールを無効*/
-}
-
-/*　mainタグの高さを100%にしてページ全体を1画面内に収める*/
-.motion-main {
-  height: 100vh; /* ビューボード全体の高さを占める*/
-  overflow: hidden; /* 内容がはみ出してスクロールするのを防ぐ*/
+  overscroll-behavior: none; /* オーバースクロールを無効化*/
 }
 
 /* セクションをスクリーン全体に合わせる*/
 section {
   height: 100vh; /* 各セクションが1画面を占める*/
-  overflow: hidden; /* セクション内の内容がはみ出さないように */
+}
+@media (min-width: 768px) {
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 

@@ -9,10 +9,11 @@ const Information = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 3.5, delay: 0.5 }}
-      className=" w-screen flex flex-col items-center justify-center px-36 md:px-0 "
     >
-      <h3>概要</h3>
-      <p>アニメの基本情報を記載</p>
+      <div className=" h-screen w-screen flex flex-col justify-center items-center">
+        <h3>概要</h3>
+        <p>アニメの基本情報を記載</p>
+      </div>
     </motion.section>
   );
 };

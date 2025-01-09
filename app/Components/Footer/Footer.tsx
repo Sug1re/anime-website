@@ -13,7 +13,7 @@ const Footer = () => {
   };
   return (
     // Footer完成!!
-    <section className=" pl-24">
+    <section>
       <footer className=" flex flex-col justify-center h-screen w-auto bg-black text-red-600 border-l-4 border-l-red-600 px-4">
         <motion.h1
           initial={{ x: 16, opacity: 0 }} //初期状態：に右16px、透明
@@ -99,13 +99,13 @@ const Footer = () => {
             delay: 3.5,
             ease: [0.87, 0.7, 0.1, 1],
           }}
-          className=" text-sm font-semibold text-end pb-12"
+          className=" text-xs font-semibold text-end pb-12 whitespace-nowrap"
         >
           © オダギリ ハジメ/
           <br />
           「任意のアニメ」製作委員会
         </motion.p>
-        <div className=" space-x-4">
+        <div className=" space-x-4 ">
           <i className=" fa-solid fa-chevron-left text-xl"></i>
           <button
             onClick={() => scrollToTop("title")}
