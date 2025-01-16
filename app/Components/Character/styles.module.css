@@ -1,0 +1,22 @@
+/* styles.module.css */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vh;
+    background-color: lightblue;
+  }
+  .container {
+    display: flex;
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
+        background-color: lightblue;
+      }
+      
+ 
+    }

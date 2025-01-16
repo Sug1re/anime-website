@@ -11,7 +11,6 @@ body {
   height: 100vh;
   overflow-x: auto; /* 横スクロールを有効*/
   overflow-y: hidden; /* 縦スクロールを無効*/
-  overscroll-behavior: none; /* オーバースクロールを無効化*/
 }
 
 /* セクションをスクリーン全体に合わせる*/
