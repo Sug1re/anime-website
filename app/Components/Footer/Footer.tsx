@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     // Footer完成!!
     <section>
-      <footer className=" flex flex-col justify-center h-screen w-auto bg-black text-red-600 border-l-4 border-l-red-600 px-4">
+      <footer className=" flex flex-col justify-center h-screen bg-black text-red-600 border-l-4 border-l-red-600 px-4">
         <motion.h1
           initial={{ x: 16, opacity: 0 }} //初期状態：に右16px、透明
           whileInView={{ x: 0, opacity: 1 }} //アニメーション後：元の位置、完全に表示

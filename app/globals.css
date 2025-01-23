@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "@fortawesome/fontawesome-free/css/all.min.css";
+@import "@fortawesome/fontawesome-free/css/all.min.css"; /* SNSのアイコンを表示させる */
 
 /* html, bodyで縦スクロールの無効化*/
 html,
@@ -9,8 +9,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  overflow-x: auto; /* 横スクロールを有効*/
-  overflow-y: hidden; /* 縦スクロールを無効*/
+ overscroll-behavior: none; /* オーバースクロールを無効化 */
 }
 
 /* セクションをスクリーン全体に合わせる*/

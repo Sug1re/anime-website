@@ -15,7 +15,7 @@ const Staff = () => {
         <div className=" grid grid-cols-3 gap-x-24 gap-y-6">
           <div className=" flex flex-col">
             <p className=" md:text-1xl font-semibold text-red-600">原作</p>
-            <p className=" text-lg md:text-2xl font-bold">冬見 つばさ</p>
+            <p className=" text-lg md:text-2xl font-bold">オダギリ ハジメ</p>
           </div>
           <div className=" flex flex-col">
             <p className=" md:text-1xl font-semibold text-red-600">監督</p>

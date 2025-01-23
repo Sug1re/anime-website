@@ -1,51 +1,71 @@
 "use client";
-import React, { useState, CSSProperties, useEffect } from "react";
-import { motion } from "framer-motion";
-import { useTransition, animated, AnimatedProps, useSpringRef } from "@react-spring/web";
+
+import React, { useState, useEffect } from "react";
+import {
+  useTransition,
+  animated,
+  useSpringRef,
+  AnimatedProps,
+} from "@react-spring/web";
 import styles from "./styles.module.css";
 
-const pages: ((props: AnimatedProps<{ style: CSSProperties }>) => React.ReactElement)[] = [
-  ({ style }) => <animated.div style={{ ...style, background: "lightpink" }}>A</animated.div>,
-  ({ style }) => <animated.div style={{ ...style, background: "lightblue" }}>B</animated.div>,
-  ({ style }) => <animated.div style={{ ...style, background: "lightgreen" }}>C</animated.div>,
+// ページコンポーネントのリスト
+const PageA: React.FC<AnimatedProps<{ style: React.CSSProperties }>> = ({
+  style,
+}) => (
+  <animated.div style={{ ...style, background: "lightpink" }}>A</animated.div>
+);
+
+const PageB: React.FC<AnimatedProps<{ style: React.CSSProperties }>> = ({
+  style,
+}) => (
+  <animated.div style={{ ...style, background: "lightblue" }}>B </animated.div>
+);
+
+const PageC: React.FC<AnimatedProps<{ style: React.CSSProperties }>> = ({
+  style,
+}) => (
+  <animated.div style={{ ...style, background: "lightgreen" }}>C</animated.div>
+);
+
+const pages: React.FC<AnimatedProps<{ style: React.CSSProperties }>>[] = [
+  PageA,
+  PageB,
+  PageC,
 ];
 
-const Character = () => {
-  const [index, set] = useState(0);
-  const onClick = () => set((state) => (state + 1) % 3);
+export default function Character() {
+  const [index, setIndex] = useState(0);
+
+  // インデックス変更処理
+  const handleClick = () => setIndex((prev) => (prev + 1) % pages.length);
 
   const transRef = useSpringRef();
+
+  // アニメーションの設定
   const transitions = useTransition(index, {
     ref: transRef,
-    keys: null,
+    keys: index, // 固定キー
     from: { opacity: 0, transform: "translate3d(100%,0,0)" },
     enter: { opacity: 1, transform: "translate3d(0%,0,0)" },
     leave: { opacity: 0, transform: "translate3d(-50%,0,0)" },
   });
 
+  // アニメーション開始
   useEffect(() => {
     transRef.start();
-  }, [index]);
+  }, [index, transRef]);
 
   return (
-    <motion.section
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 3.5, delay: 0.5 }}
+    <div
+      className="w-screen min-h-screen flex items-center justify-center text-9xl"
+      onClick={handleClick}
+      style={{ cursor: "pointer", overflow: "hidden" }} // クリック可能な見た目に変更
     >
-      <div className="h-screen w-screen flex flex-col justify-center items-center">
-        <h6>キャラクター紹介</h6>
-        <p>キャラクターの詳細情報を記載</p>
-
-        <div className={`flex fill ${styles.container}`} onClick={onClick}>
-          {transitions((style, i) => {
-            const Page = pages[i];
-            return <Page style={style} />;
-          })}
-        </div>
-      </div>
-    </motion.section>
+      {transitions((style, i) => {
+        const Page = pages[i];
+        return <Page style={style} />;
+      })}
+    </div>
   );
-};
-
-export default Character;
+}

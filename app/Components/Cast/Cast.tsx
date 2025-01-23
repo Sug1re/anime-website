@@ -10,7 +10,7 @@ const Cast = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 3.5, delay: 0.5 }}
     >
-      <div className=" h-screen w-screen flex flex-col justify-center items-center px-44">
+      <div className=" h-screen w-screen flex flex-col justify-center items-center">
         {/*　フォントを変更する */}
         <h5 className=" text-3xl md:text-4xl pb-5">CAST</h5>
         <div className=" grid grid-cols-4 gap-x-28 gap-y-8">
