@@ -19,7 +19,7 @@ const PageA: React.FC<AnimatedProps<{ style: React.CSSProperties }>> = ({
 const PageB: React.FC<AnimatedProps<{ style: React.CSSProperties }>> = ({
   style,
 }) => (
-  <animated.div style={{ ...style, background: "lightblue" }}>B </animated.div>
+  <animated.div style={{ ...style, background: "lightblue" }}>B</animated.div>
 );
 
 const PageC: React.FC<AnimatedProps<{ style: React.CSSProperties }>> = ({
