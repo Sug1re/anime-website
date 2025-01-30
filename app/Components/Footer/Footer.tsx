@@ -103,7 +103,7 @@ const Footer = () => {
         >
           © オダギリ ハジメ/
           <br />
-          「任意のアニメ」製作委員会
+          「描く光、描く影」製作委員会
         </motion.p>
         <div className=" space-x-4 ">
           <i className=" fa-solid fa-chevron-left text-xl"></i>

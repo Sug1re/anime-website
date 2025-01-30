@@ -16,7 +16,7 @@ const Title = () => {
       id="title"
     >
       <h1 className=" h-screen w-screen flex justify-center items-center">
-        名探偵コナン
+        描く光、描く影
       </h1>
     </motion.section>
   );
