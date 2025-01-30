@@ -53,16 +53,18 @@ const CharacterCard: React.FC<{ character: Character }> = ({ character }) => {
 
 const App = () => {
   return (
-    <div className="p-8">
-      <h1 className="text-3xl font-bold text-center mb-8">
-        Anime Character Introductions
-      </h1>
-      <div className="flex justify-center gap-6 flex-wrap">
-        {characters.map((character, index) => (
-          <CharacterCard key={index} character={character} />
-        ))}
+    <section>
+      <div className="p-8 h-screen w-screen flex justify-center items-center">
+        <h1 className="text-3xl font-bold text-center mb-8">
+          Anime Character Introductions
+        </h1>
+        <div className="flex justify-center gap-6 flex-wrap">
+          {characters.map((character, index) => (
+            <CharacterCard key={index} character={character} />
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
