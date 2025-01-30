@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     // Footer完成!!
     <section>
-      <footer className=" flex flex-col justify-center h-screen bg-black text-red-600 border-l-4 border-l-red-600 px-4">
+      <footer className=" flex flex-col justify-center h-screen bg-white text-blue-500 border-l-4 border-l-blue-500 px-4">
         <motion.h1
           initial={{ x: 16, opacity: 0 }} //初期状態：に右16px、透明
           whileInView={{ x: 0, opacity: 1 }} //アニメーション後：元の位置、完全に表示
@@ -38,7 +38,7 @@ const Footer = () => {
             }}
             href="//x.com"
             target="_blank" // リンクを踏んだ時、別タグで開く
-            className=" pl-7"
+            className=" pl-7 text-blue-500"
           >
             <i
               className=" fab fa-x-twitter text-4xl"
@@ -55,7 +55,7 @@ const Footer = () => {
             }}
             href="//facebook.com"
             target="_blank"
-            className=" pl-7"
+            className=" pl-7 text-blue-500"
           >
             <i className=" fab fa-facebook text-4xl" aria-label="FaceBook"></i>
           </motion.a>
@@ -69,7 +69,7 @@ const Footer = () => {
             }}
             href="//line.me"
             target="_blank"
-            className=" pl-7"
+            className=" pl-7 text-blue-500"
           >
             <i className=" fab fa-line text-4xl" aria-label="LINE"></i>
           </motion.a>
@@ -83,7 +83,7 @@ const Footer = () => {
             }}
             href="//instagram.com"
             target="_blank"
-            className=" pl-7"
+            className=" pl-7 text-blue-500"
           >
             <i
               className=" fab fa-instagram text-4xl"
