@@ -51,7 +51,7 @@ const CharacterCard: React.FC<{ character: Character }> = ({ character }) => {
   );
 };
 
-const App = () => {
+const Character = () => {
   return (
     <section>
       <div className="p-8 h-screen w-screen flex justify-center items-center">
@@ -68,4 +68,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Character;
