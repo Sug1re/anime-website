@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.7.2",
+    "@fortawesome/font-awesome-free": "^6.7.2",
     "framer-motion": "^11.18.2",
     "next": "15.0.4",
     "react": "^18.3.1",
