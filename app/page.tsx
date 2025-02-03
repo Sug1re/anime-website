@@ -6,7 +6,7 @@ export default function Home() {
     <main className=" flex min-h-screen">
       <Section.Title />
       <Section.Introduction />
-      <Section.Information />
+      {/* <Section.Information /> */}
       <Section.Staff />
       <Section.Cast />
       <Section.Character />

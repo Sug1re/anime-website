@@ -74,7 +74,7 @@ const Staff = () => {
           <div className=" flex flex-col">
             <p className=" md:text-lg font-semibold text-red-600">制作</p>
             <p className=" text-lg md:text-1xl font-bold">
-              「任意のアニメ」製作委員会
+              「描く光、描く影」製作委員会
             </p>
           </div>
         </div>
