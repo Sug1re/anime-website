@@ -11,6 +11,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage:{
+        "school1":"url('../app/img/backGroundSchool.jpg')",
+      }
     },
   },
   plugins: [],
