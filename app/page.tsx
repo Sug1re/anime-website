@@ -8,6 +8,7 @@ export default function Home() {
       <Section.Introduction /> */}
       <Section.BackGroundSchool1 />
       {/* <Section.Information /> */}
+      <Section.BackGroundSchool2 />
       {/* <Section.Staff />
       <Section.Cast />
       <Section.Character /> */}

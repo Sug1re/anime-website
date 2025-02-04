@@ -1,26 +1,24 @@
 "use client";
 
 import React from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import { Introduction, Title } from "../Index";
 
 const BackGroundSchool1 = () => {
-  // スクロール量を取得
-  const { scrollXProgress } = useScroll();
-
-  // 背景の動き（スクロール量の 50% の速度で動かす）
-  const backgroundX = useTransform(scrollXProgress, [0, 1], ["0%", "-50%"]);
   return (
-    <div>
+    <div className="relative w-[200vw]">
       {/* 背景 */}
       <motion.section
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 3.5, delay: 2.5 }}
-        className=" flex min-h-screen bg-school1 bg-cover bg-center object-cover "
+        className="relative bg-cover bg-center bg-fixed w-full h-screen"
+        style={{
+          backgroundImage: "url('/backGroundSchool1.jpg')",
+        }}
       >
+        {/* 半透明オーバーレイ */}
+        <div className="absolute inset-0 bg-white/70"></div>
+
         {/* コンテンツ */}
-        <div className=" flex">
+        <div className="relative flex">
           <Title />
           <Introduction />
         </div>

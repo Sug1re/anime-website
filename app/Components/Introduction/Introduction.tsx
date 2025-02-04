@@ -5,20 +5,7 @@ import { motion } from "framer-motion";
 
 const Introduction = () => {
   return (
-    <motion.section
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 3.5, delay: 0.5 }}
-      // className="relative h-screen w-screen "
-    >
-      {/* <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 3.5, delay: 2.5 }}
-        className="absolute inset-0 bg-school1 bg-cover bg-center before:absolute before:inset-0 before:bg-white/80"
-      ></motion.div> */}
-
-      {/* <div className="relative z-50 h-screen w-screen flex flex-col justify-center items-center"> */}
+    <motion.section>
       <div className=" h-screen w-screen flex flex-col justify-center items-center">
         <h3 className=" font-bold text-xl text-blue-400 mb-4">
           心の中の色を、絵に描く。友情と成長が交差するアートの物語。
