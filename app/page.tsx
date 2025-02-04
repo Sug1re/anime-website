@@ -4,12 +4,13 @@ import * as Section from "./Components/Index";
 export default function Home() {
   return (
     <main className=" flex min-h-screen">
-      <Section.Title />
-      <Section.Introduction />
+      {/* <Section.Title />
+      <Section.Introduction /> */}
+      <Section.BackGroundSchool1 />
       {/* <Section.Information /> */}
-      <Section.Staff />
+      {/* <Section.Staff />
       <Section.Cast />
-      <Section.Character />
+      <Section.Character /> */}
       <Section.Footer />
     </main>
   );
