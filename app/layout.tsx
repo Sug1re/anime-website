@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "TVアニメ",
+  title: "TVアニメ「描く光、描く影」公式サイト",
   description: "",
 };
 

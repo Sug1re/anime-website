@@ -11,11 +11,12 @@ const Title = () => {
     // transition initialとanimateの間
     <motion.section
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      whileInView={{ opacity: 1 }}
       transition={{ duration: 3.5, delay: 0.5 }}
       id="title"
     >
-      <h1 className=" h-screen w-screen flex justify-center items-center">
+      {/* タイトルテキスト */}
+      <h1 className=" h-screen w-screen flex justify-center items-center text-blue-400 font-extrabold text-5xl">
         描く光、描く影
       </h1>
     </motion.section>

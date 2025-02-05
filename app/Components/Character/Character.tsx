@@ -111,6 +111,18 @@ const characters: Character[] = [
       "Sasuke is a skilled ninja with a tragic past, seeking revenge on his brother.",
     image: "https://example.com/sasuke.jpg", // 画像URL
   },
+  {
+    name: "Naruto Uzumaki",
+    description:
+      "Naruto is a ninja who seeks recognition from his peers and dreams of becoming the Hokage.",
+    image: "https://example.com/naruto.jpg", // 画像URL
+  },
+  {
+    name: "Naruto Uzumaki",
+    description:
+      "Naruto is a ninja who seeks recognition from his peers and dreams of becoming the Hokage.",
+    image: "https://example.com/naruto.jpg", // 画像URL
+  },
 ];
 
 // CharacterCardコンポーネントに型を指定
@@ -133,7 +145,7 @@ const CharacterCard: React.FC<{ character: Character }> = ({ character }) => {
   );
 };
 
-const App = () => {
+const Character = () => {
   return (
     <section>
       <div className="p-8 h-screen w-screen flex justify-center items-center">
@@ -150,4 +162,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Character;
