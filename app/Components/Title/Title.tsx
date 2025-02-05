@@ -6,9 +6,8 @@ import { motion } from "framer-motion";
 const Title = () => {
   return (
     // initial 初期状態,
-    // animate 変化,
-    // exit 最終状態,
-    // transition initialとanimateの間
+    // whileInView ビューポート内に変化,
+    // transition アニメーションの時間と遅延,
     <motion.section
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
