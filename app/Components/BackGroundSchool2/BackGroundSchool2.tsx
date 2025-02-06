@@ -9,7 +9,7 @@ const BackGroundSchool2 = () => {
     <div className="relative w-[300vw]">
       {/* 背景 */}
       <motion.section
-        className="relative z-50 bg-cover bg-center bg-fixed w-full h-screen"
+        className="relative bg-cover bg-center bg-fixed w-full h-screen"
         style={{
           backgroundImage: "url('/backGroundSchool2.jpg')",
         }}
@@ -18,7 +18,7 @@ const BackGroundSchool2 = () => {
         <div className="absolute inset-0 bg-white/70 "></div>
 
         {/* コンテンツ */}
-        <div className="relative flex z-0">
+        <div className="relative flex">
           <Staff />
           <Cast />
           <Character />

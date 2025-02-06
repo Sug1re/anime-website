@@ -1,50 +1,55 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
-const Cast = () => {
+// キャストの型定義
+interface staffMembers {
+  role: string;
+  name: string;
+}
+
+const castMembers = [
+  { role: "原作", name: "オダギリ ハジメ" },
+  { role: "監督", name: "遠藤 義信" },
+  { role: "シリーズ構成・脚本", name: "小西 仁美" },
+  { role: "キャラクターデザイン", name: "鈴木 一郎" },
+  { role: "総作画監督", name: "井口 澪" },
+];
+
+export default function Staff() {
   return (
     <motion.section
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 3.5, delay: 0.5 }}
-      className=" whitespace-nowrap"
+      id="cast"
+      className="relative w-screen min-h-screen flex items-center justify-center text-blue-500"
     >
-      <div className=" h-screen w-screen flex flex-col items-center justify-center">
-        <div className=" grid grid-cols-3 gap-x-24 gap-y-6">
-          <div className=" flex flex-col">
-            <p className=" md:text-lg font-semibold text-red-600">原作</p>
-            <p className=" text-lg md:text-1xl font-bold">オダギリ ハジメ</p>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8 relative">
+        {castMembers.map((cast, index) => (
+          <div
+            key={index}
+            className="bg-gray-100 rounded-lg shadow-md px-3 py-4 flex flex-col items-center text-center relative"
+          >
+            {/* 監督のデータの左上にロゴ配置 */}
+            {index === 0 && (
+              <Image
+                src="/Cast.png"
+                alt="スタッフのロゴ"
+                width={150}
+                height={150}
+                className="absolute top-[-10px] left-[10px]  transform -translate-x-1/2 -translate-y-1/2"
+              />
+            )}
+
+            {/* キャスト紹介 */}
+            <h3 className="text-xl font-black mb-2">{cast.role}</h3>
+            <p className="font-bold text-gray-700">{cast.name}</p>
           </div>
-          <div className=" flex flex-col">
-            <p className=" md:text-lg font-semibold text-red-600">監督</p>
-            <p className=" text-lg md:text-1xl font-bold">遠藤 義信</p>
-          </div>
-          <div className=" flex flex-col">
-            <p className=" md:text-lg font-semibold text-red-600">
-              シリーズ構成・脚本
-            </p>
-            <p className=" text-lg md:text-1xl font-bold">小西 仁美</p>
-          </div>
-          <div className=" flex flex-col">
-            <p className=" md:text-lg font-semibold text-red-600">
-              キャラクターデザイン
-            </p>
-            <p className=" text-lg md:text-1xl font-bold">井口 澪</p>
-          </div>
-          <div className=" flex flex-col">
-            <p className=" md:text-lg font-semibold text-red-600">総作画監督</p>
-            <p className=" text-lg md:text-1xl font-bold">高野 源一</p>
-          </div>
-          <div className=" flex flex-col">
-            <p className=" md:text-lg font-semibold text-red-600">色彩設計</p>
-            <p className=" text-lg md:text-1xl font-bold">渡部 みどり</p>
-          </div>
-        </div>
+        ))}
       </div>
     </motion.section>
   );
-};
-
-export default Cast;
+}
