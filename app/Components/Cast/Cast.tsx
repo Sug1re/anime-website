@@ -6,16 +6,16 @@ import { motion } from "framer-motion";
 
 // キャストの型定義
 interface staffMembers {
-  role: string;
   name: string;
+  CV: string;
 }
 
 const castMembers = [
-  { role: "原作", name: "オダギリ ハジメ" },
-  { role: "監督", name: "遠藤 義信" },
-  { role: "シリーズ構成・脚本", name: "小西 仁美" },
-  { role: "キャラクターデザイン", name: "鈴木 一郎" },
-  { role: "総作画監督", name: "井口 澪" },
+  { name: "西條 碧", CV: "勇飛 莉都" }, // 主人公
+  { name: "立川 翼", CV: "朝比奈 香緒里" }, // ヒロイン
+  { name: "一ノ瀬 遊真", CV: "長瀬 一稀" }, // 主人公の友達
+  { name: "高橋 モカ", CV: "天水 ひなき" }, // ヒロインの友達
+  { name: "初平 翠", CV: "小鳥 並木" }, // 部長
 ];
 
 export default function Staff() {
@@ -31,7 +31,7 @@ export default function Staff() {
         {castMembers.map((cast, index) => (
           <div
             key={index}
-            className="bg-gray-100 rounded-lg shadow-md px-3 py-4 flex flex-col items-center text-center relative"
+            className="bg-gray-100 rounded-lg shadow-md px-6 py-4 flex flex-col items-center text-center relative"
           >
             {/* 監督のデータの左上にロゴ配置 */}
             {index === 0 && (
@@ -45,8 +45,8 @@ export default function Staff() {
             )}
 
             {/* キャスト紹介 */}
-            <h3 className="text-xl font-black mb-2">{cast.role}</h3>
-            <p className="font-bold text-gray-700">{cast.name}</p>
+            <h3 className="text-xl font-black mb-2">{cast.name}</h3>
+            <p className="font-bold text-gray-700">{cast.CV}</p>
           </div>
         ))}
       </div>
