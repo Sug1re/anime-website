@@ -1,28 +1,21 @@
-"use client";
-
 import React from "react";
-import { motion } from "framer-motion";
-import { url } from "inspector";
 import Image from "next/image";
 
-const Staff = () => {
+const StaffCredits = () => {
   return (
-    <motion.section
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 3.5, delay: 0.5 }}
-      className=" whitespace-nowrap"
-    >
-      {/* ロゴ画像 */}
-      <div className=" relative">
+    <div className="">
+      {/* スタッフ紹介 */}
+      <div className=" relative h-screen w-screen flex flex-col items-center justify-center">
+        {/* ロゴの画像 */}
+        {/* <Image src="/Cast.png" alt="スタッフのロゴ" width={200} height={200} /> */}
         <Image
           src="/Staff.png"
-          alt="スタッフロゴ"
-          layout="fill"
-          objectFit="contain"
+          alt="スタッフのロゴ"
+          width={150}
+          height={150}
+          className=" absolute  top-0"
         />
-      </div>
-      <div className=" h-screen w-screen flex flex-col items-center ">
+
         <div className=" grid grid-cols-3 gap-x-16 gap-y-6">
           <div className=" flex flex-col">
             <p className=" md:text-lg font-semibold text-red-600">原作</p>
@@ -90,8 +83,8 @@ const Staff = () => {
           </div>
         </div>
       </div>
-    </motion.section>
+    </div>
   );
 };
 
-export default Staff;
+export default StaffCredits;
