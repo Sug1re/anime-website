@@ -6,9 +6,8 @@ import { motion } from "framer-motion";
 const Title = () => {
   return (
     // initial 初期状態,
-    // animate 変化,
-    // exit 最終状態,
-    // transition initialとanimateの間
+    // whileInView ビューポート内に変化,
+    // transition アニメーションの時間と遅延,
     <motion.section
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
@@ -16,7 +15,7 @@ const Title = () => {
       id="title"
     >
       {/* タイトルテキスト */}
-      <h1 className=" h-screen w-screen flex justify-center items-center text-blue-400 font-extrabold text-5xl">
+      <h1 className=" h-screen w-screen flex justify-center items-center text-blue-500 font-extrabold text-5xl">
         描く光、描く影
       </h1>
     </motion.section>

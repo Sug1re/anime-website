@@ -14,7 +14,15 @@ const Footer = () => {
   return (
     // Footer完成!!
     <section>
-      <footer className=" flex flex-col justify-center h-screen bg-black text-red-600 border-l-4 border-l-red-600 px-4">
+      <footer
+        style={{
+          backgroundImage: "url('/backGroundSchool3.jpg')",
+        }}
+        className=" relative flex flex-col justify-center h-screen text-blue-500 border-l-4 border-l-blue-500 px-4 bg-left bg-cover"
+      >
+        {/* 半透明オーバーレイ */}
+        <div className="absolute inset-0 bg-white/70"></div>
+
         <motion.h1
           initial={{ x: 16, opacity: 0 }} //初期状態：に右16px、透明
           whileInView={{ x: 0, opacity: 1 }} //アニメーション後：元の位置、完全に表示
@@ -23,11 +31,11 @@ const Footer = () => {
             delay: 0.5,
             ease: [0.87, 0.7, 0.1, 1],
           }}
-          className=" font-black text-2xl pb-4"
+          className=" relative font-black text-2xl pb-4"
         >
           SHARE
         </motion.h1>
-        <div className=" flex flex-col space-y-8 pb-8">
+        <div className=" relative flex flex-col space-y-8 pb-8">
           <motion.a
             initial={{ x: 16, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -99,13 +107,13 @@ const Footer = () => {
             delay: 3.5,
             ease: [0.87, 0.7, 0.1, 1],
           }}
-          className=" text-xs font-semibold text-end pb-12 whitespace-nowrap"
+          className=" relative text-xs font-semibold text-end pb-12 whitespace-nowrap"
         >
           © オダギリ ハジメ/
           <br />
           「描く光、描く影」製作委員会
         </motion.p>
-        <div className=" space-x-4 ">
+        <div className="  relative space-x-4 ">
           <i className=" fa-solid fa-chevron-left text-xl"></i>
           <button
             onClick={() => scrollToTop("title")}

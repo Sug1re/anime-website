@@ -18,7 +18,7 @@ const BackGroundSchool2 = () => {
         <div className="absolute inset-0 bg-white/70 "></div>
 
         {/* コンテンツ */}
-        <div className="relative flex ">
+        <div className="relative flex">
           <Staff />
           <Cast />
           <Character />
