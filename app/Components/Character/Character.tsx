@@ -12,23 +12,23 @@ interface Character {
 const characters: Character[] = [
   {
     image: "/Character/立川 翼.png",
-    bgColor: "bg-cyan-200",
+    bgColor: "bg-cyan-300",
   },
   {
     image: "/Character/西條 碧.png",
-    bgColor: "bg-blue-200",
+    bgColor: "bg-blue-300",
   },
   {
     image: "/Character/高梨 モカ.png",
-    bgColor: "bg-yellow-200",
+    bgColor: "bg-yellow-300",
   },
   {
     image: "/Character/一ノ瀬 遊真.png",
-    bgColor: "bg-red-200",
+    bgColor: "bg-red-300",
   },
   {
     image: "/Character/初平 翠.png",
-    bgColor: "bg-lime-200",
+    bgColor: "bg-lime-300",
   },
 ];
 

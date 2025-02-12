@@ -15,7 +15,7 @@ const BackGroundSchool2 = () => {
         }}
       >
         {/* 半透明オーバーレイ */}
-        <div className="absolute inset-0 bg-white/70 "></div>
+        <div className="absolute inset-0 bg-white/40 "></div>
 
         {/* コンテンツ */}
         <div className="relative flex">

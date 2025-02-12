@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Title = () => {
   return (
@@ -9,15 +10,20 @@ const Title = () => {
     // whileInView ビューポート内に変化,
     // transition アニメーションの時間と遅延,
     <motion.section
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 3.5, delay: 0.5 }}
+      // initial={{ opacity: 0 }}
+      // whileInView={{ opacity: 1 }}
+      // transition={{ duration: 3.5, delay: 0.5 }}
       id="title"
     >
       {/* タイトルテキスト */}
-      <h1 className=" h-screen w-screen flex justify-center items-center text-blue-500 font-extrabold text-5xl">
-        描く光、描く影
-      </h1>
+      <div className="flex justify-center items-center h-screen w-screen">
+        <Image
+          src="/タイトルロゴ.png"
+          alt="タイトルロゴ"
+          width={500}
+          height={500}
+        />
+      </div>
     </motion.section>
   );
 };
