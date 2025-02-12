@@ -12,11 +12,11 @@ interface Character {
 const characters: Character[] = [
   {
     image: "/Character/立川 翼.png",
-    bgColor: "bg-cyan-300",
+    bgColor: "bg-cyan-200",
   },
   {
     image: "/Character/西條 碧.png",
-    bgColor: "bg-blue-300",
+    bgColor: "bg-blue-400",
   },
   {
     image: "/Character/高梨 モカ.png",
@@ -24,11 +24,11 @@ const characters: Character[] = [
   },
   {
     image: "/Character/一ノ瀬 遊真.png",
-    bgColor: "bg-red-300",
+    bgColor: "bg-red-400",
   },
   {
     image: "/Character/初平 翠.png",
-    bgColor: "bg-lime-300",
+    bgColor: "bg-lime-400",
   },
 ];
 
@@ -37,7 +37,7 @@ const CharacterCard: React.FC<{ character: Character }> = ({ character }) => {
   const [isFloating, setIsFloating] = useState(false);
   return (
     <motion.div
-      className={`max-w-xs w-full px-2 py-5 border-2 border-gray-300 rounded-xl text-center bg-gray-100 transition-transform transform hover:scale-105 ${character.bgColor}`}
+      className={`max-w-xs px-2 py-5 rounded-xl ${character.bgColor}`}
       initial={{ opacity: 0, x: 100 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 3.5, delay: 0.5, ease: [0.25, 1, 0.25, 1] }}

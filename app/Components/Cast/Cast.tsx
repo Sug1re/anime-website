@@ -23,7 +23,7 @@ export default function Staff() {
     <motion.section
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ duration: 3.5, delay: 0.5 }}
+      transition={{ duration: 1.5, delay: 0.5 }}
       id="cast"
       className="relative w-screen min-h-screen flex items-center justify-center text-blue-500"
     >
@@ -31,7 +31,7 @@ export default function Staff() {
         {castMembers.map((cast, index) => (
           <div
             key={index}
-            className="bg-gray-100 rounded-lg shadow-md px-6 py-4 flex flex-col items-center text-center relative"
+            className="bg-white rounded-lg shadow-md px-6 py-4 flex flex-col items-center text-center relative"
           >
             {/* 監督のデータの左上にロゴ配置 */}
             {index === 0 && (
