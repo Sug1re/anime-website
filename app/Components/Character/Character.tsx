@@ -10,19 +10,19 @@ interface Character {
 
 const characters: Character[] = [
   {
-    image: "https://example.com/naruto.jpg",
+    image: "/Character/立川 翼.png",
   },
   {
-    image: "https://example.com/sakura.jpg",
+    image: "/Character/西條 碧.png",
   },
   {
-    image: "https://example.com/sasuke.jpg",
+    image: "/Character/高梨 モカ.png",
   },
   {
-    image: "https://example.com/naruto.jpg",
+    image: "/Character/一ノ瀬 遊真.png",
   },
   {
-    image: "https://example.com/naruto.jpg",
+    image: "/Character/初平 翠.png",
   },
 ];
 
