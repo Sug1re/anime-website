@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const Introduction = () => {
   return (
     <motion.section>
-      <div className=" h-screen w-screen flex flex-col justify-center items-center">
+      <div className=" h-screen w-screen flex flex-col justify-center items-center text-gray-700">
         <h3 className=" font-black text-xl text-blue-500 mb-4">
           心の中の色を、絵に描く。友情と成長が交差するアートの物語。
         </h3>
