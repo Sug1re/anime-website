@@ -33,37 +33,22 @@ const Title = () => {
       </div>
 
       {/* キービジュアルのフェードアウト */}
+
       <motion.div
-        className="absolute inset-0 z-0 flex justify-center items-center"
+        className="absolute inset-0 w-full min-h-[100vh] z-0 flex justify-center items-center bg-blue-400/70"
         initial={{ opacity: 1 }}
         animate={{ opacity: isFaded ? 0 : 1 }}
         transition={{ duration: 2 }}
       >
-        <Image
-          src="/backGroundSky.jpg"
-          alt="キービジュアルの余白部分"
-          // width={700}
-          // height={700}
-          layout="fill"
-          priority
-          className="bg-center bg-cover"
-        />
-        <motion.div
-          className="absolute inset-0 w-full h-full z-0 flex justify-center items-center"
-          initial={{ opacity: 1 }}
-          animate={{ opacity: isFaded ? 0 : 1 }}
-          transition={{ duration: 2 }}
-        >
+        <div className=" border-4 border-blue-400">
           <Image
             src="/keyVisual.png"
             alt="キービジュアル"
             width={700}
             height={700}
-            // layout="fill"
             priority
-            className="bg-center bg-cover"
           />
-        </motion.div>
+        </div>
       </motion.div>
     </motion.section>
   );
