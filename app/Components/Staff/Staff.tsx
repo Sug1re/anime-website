@@ -34,9 +34,9 @@ export default function Staff() {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5, delay: 0.5 }}
       id="staff"
-      className="relative w-screen min-h-screen flex items-center justify-center text-blue-500"
+      className="relative w-auto h-screen flex items-center justify-center text-blue-500"
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-8 relative">
+      <div className="grid grid-cols-4 gap-8 p-8 relative">
         {staffMembers.map((staff, index) => (
           <div
             key={index}
