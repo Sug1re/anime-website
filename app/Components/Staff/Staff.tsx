@@ -40,7 +40,7 @@ export default function Staff() {
         {staffMembers.map((staff, index) => (
           <div
             key={index}
-            className="bg-white rounded-lg shadow-md px-3 gap-y-1 py-4 flex flex-col items-center text-center relative w-[250px]"
+            className="bg-white rounded-lg shadow-md px-3 gap-y-1 py-4 flex flex-col items-center text-center relative w-[250px] font-851"
           >
             {/* 監督のデータの左上にロゴ配置 */}
             {index === 0 && (
@@ -54,8 +54,8 @@ export default function Staff() {
             )}
 
             {/* スタッフ紹介 */}
-            <h3 className="text-xl font-black mb-2">{staff.role}</h3>
-            <p className="font-bold text-gray-700">{staff.name}</p>
+            <h3 className="text-2xl font-black mb-2">{staff.role}</h3>
+            <p className="text-xl font-bold text-gray-700">{staff.name}</p>
           </div>
         ))}
       </div>

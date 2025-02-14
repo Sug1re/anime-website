@@ -6,7 +6,7 @@ import { Cast, Character, Staff } from "../Index";
 
 const BackGroundSchool2 = () => {
   return (
-    <div className="relative w-[850vw] lg:w-[300vw]">
+    <div className="relative w-[900vw] lg:w-[300vw]">
       {/* 背景 */}
       <motion.section
         className="relative bg-cover bg-center bg-fixed w-full h-screen"
@@ -18,7 +18,7 @@ const BackGroundSchool2 = () => {
         <div className="absolute inset-0 bg-white/40 "></div>
 
         {/* コンテンツ */}
-        <div className="relative flex gap-x-20 lg:gap-x-80 ml-40">
+        <div className="relative flex gap-x-24 lg:gap-x-96 ml-40">
           <Staff />
           <Cast />
           <Character />
