@@ -18,7 +18,7 @@ const Introduction = () => {
         />
 
         {/* テキストコンテンツ */}
-        <div className="h-full w-full flex flex-col justify-center items-center text-blue-200 absolute z-10">
+        <div className="h-full w-full flex flex-col justify-center items-center text-blue-200 absolute z-10 font-851 text-xl">
           <h3 className="font-black text-xl  mb-4 text-center">
             心の中の色を、絵に描く。友情と成長が交差するアートの物語。
           </h3>

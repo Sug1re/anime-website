@@ -13,4 +13,14 @@ body {
  overscroll-behavior: none; /* オーバースクロールを無効化 */
 }
 
+@font-face {
+  font-family: '851マカポップ';
+  src: url('/fonts/851MkPOP_101.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-851 {
+  font-family: '851マカポップ', sans-serif;
+}
 

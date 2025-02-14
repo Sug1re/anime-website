@@ -31,7 +31,7 @@ export default function Staff() {
         {castMembers.map((cast, index) => (
           <div
             key={index}
-            className="bg-white rounded-lg shadow-md px-6 py-4 flex flex-col items-center text-center relative"
+            className="bg-white rounded-lg shadow-md px-6 py-4 flex flex-col items-center text-center relative "
           >
             {/* 監督のデータの左上にロゴ配置 */}
             {index === 0 && (

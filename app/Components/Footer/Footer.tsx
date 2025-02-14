@@ -13,7 +13,7 @@ const Footer = () => {
   };
   return (
     // Footer完成!!
-    <section>
+    <section className=" font-851">
       <footer
         style={{
           backgroundImage: "url('/backGroundSchool3.jpg')",
@@ -96,7 +96,7 @@ const Footer = () => {
             <i
               className=" fab fa-instagram text-4xl"
               aria-label="INSTAGRAM"
-            ></i>{" "}
+            ></i>
           </motion.a>
         </div>
         <motion.p
