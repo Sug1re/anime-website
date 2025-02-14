@@ -27,11 +27,11 @@ export default function Staff() {
       id="cast"
       className="relative w-auto h-screen flex items-center justify-center text-blue-500"
     >
-      <div className="grid grid-cols-3 gap-8 p-8 relative">
+      <div className="grid grid-cols-3 gap-x-8 gap-y-6 relative">
         {castMembers.map((cast, index) => (
           <div
             key={index}
-            className="bg-white rounded-lg shadow-md px-6 py-4 flex flex-col text-center relative "
+            className="bg-white rounded-lg shadow-md px-12 py-4 flex flex-col text-center relative "
           >
             {/* 監督のデータの左上にロゴ配置 */}
             {index === 0 && (
