@@ -16,6 +16,15 @@ const Title = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  // フェードアウトしている間スクロールを無効化
+  useEffect(() => {
+    if (!isFaded) {
+      document.body.style.overflow = "hidden"; // スクロールを無効にする
+    } else {
+      document.body.style.overflow = "auto"; // スクロールを有効にする
+    }
+  }, [isFaded]);
+
   return (
     <motion.section
       id="title"
@@ -33,7 +42,6 @@ const Title = () => {
       </div>
 
       {/* キービジュアルのフェードアウト */}
-
       <motion.div
         className="absolute inset-0 w-full min-h-[100vh] z-0 flex justify-center items-center bg-blue-400/70"
         initial={{ opacity: 1 }}
