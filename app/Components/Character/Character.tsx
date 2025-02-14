@@ -40,13 +40,13 @@ const CharacterCard: React.FC<{ character: Character }> = ({ character }) => {
       className={`max-w-xs px-2 py-5 rounded-xl ${character.bgColor}`}
       initial={{ opacity: 0, x: 100 }}
       whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 3.5, delay: 0.5, ease: [0.25, 1, 0.25, 1] }}
+      transition={{ duration: 3.5, delay: 0.5, ease: [0.55, 1, 0.55, 1] }}
       onAnimationComplete={() => setIsFloating(true)} // アニメーション終了時に揺れを開始
       animate={
         isFloating
           ? {
-              y: [0, -10, 0, 10, 0], // 上下に揺れる動き
-              transition: { duration: 3, repeat: Infinity, ease: "easeInOut" },
+              y: [0, -6, -10, -6, 0, 6, 10, 6, 0], // 上下に揺れる動き
+              transition: { duration: 3, repeat: Infinity, ease: "linear" },
             }
           : {}
       }
