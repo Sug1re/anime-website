@@ -6,7 +6,7 @@ import { Cast, Character, Staff } from "../Index";
 
 const BackGroundSchool2 = () => {
   return (
-    <div className="relative w-[650vw] lg:w-[300vw]">
+    <div className="relative w-[850vw] lg:w-[300vw]">
       {/* 背景 */}
       <motion.section
         className="relative bg-cover bg-center bg-fixed w-full h-screen"

@@ -59,8 +59,8 @@ const CharacterCard: React.FC<{ character: Character }> = ({ character }) => {
 const Character = () => {
   return (
     <section>
-      <div className=" h-screen w-screen flex justify-center items-center">
-        <div className="flex justify-center gap-6">
+      <div className=" h-screen w-screen flex justify-center items-center w-[1100px]">
+        <div className="flex justify-center gap-6 ">
           {characters.map((character, index) => (
             <CharacterCard key={index} character={character} />
           ))}
