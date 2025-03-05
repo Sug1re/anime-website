@@ -14,23 +14,23 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "TVアニメ「描く光、描く影」公式サイト",
-  description:
-    "学内コンペでWeb開発部門に応募した作品です。6人で活動してイラスト担当とWeb担当に分担して作業しました。",
-  abstract: "空想のアニメなのでTVやサブスクでは放送されません。",
-  authors: [
-    {
-      name: "Sugi:re.tsx",
-      url: "https://github.com/Sug1re",
-    },
-  ],
+  // title: "TVアニメ「描く光、描く影」公式サイト",
+  // description:
+  //   "学内コンペでWeb開発部門に応募した作品です。6人で活動してイラスト担当とWeb担当に分担して作業しました。",
+  // abstract: "空想のアニメなのでTVやサブスクでは放送されません。",
+  // authors: [
+  //   {
+  //     name: "Sugi:re.tsx",
+  //     url: "https://github.com/Sug1re",
+  //   },
+  // ],
   openGraph: {
     type: "website",
     url: "https://anime-website-sage.vercel.app",
     title: "TVアニメ「描く光、描く影」公式サイト",
     description:
       "学内コンペでWeb開発部門に応募した作品です。6人で活動してイラスト担当とWeb担当に分担して作業しました。＊空想のアニメなのでTVやサブスクでは放送されません。＊",
-    siteName: "My Website",
+    siteName: "描く光、描く影 Official Site",
     images: [
       {
         url: "https://anime-website-sage.vercel.app/keyVisual.png",
